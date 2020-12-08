@@ -4,6 +4,7 @@
 #include <vector>
 #include "linea.h"
 #include "punto.h"
+#include <math.h>
 
 using namespace std;
 class Poligono{
@@ -14,6 +15,15 @@ protected:
 public:
 	Poligono(vector<Punto> puntos);
 	int getN();
+	vector<Linea> getAristas();
+	vector<Punto> getVertices();
 	double getPerimetro();
 };
+
+class Regular: public Poligono{
+public:
+	Regular(vector<Punto> puntos): Poligono(puntos){}
+	double getArea();
+};
+
 #endif
