@@ -1,5 +1,5 @@
 #include <iostream>
-#include "punto.cpp"
+#include "punto.h"
 
 Punto::Punto(int _x, int _y){
 	this->x = _x;

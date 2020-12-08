@@ -8,7 +8,7 @@ public:
 	Punto(int _x, int _y);
 	virtual int getX();
 	virtual int getY();
-	virtual void setX();
-	virtual void setY();
+	virtual void setX(int _x);
+	virtual void setY(int _y);
 };
 #endif
