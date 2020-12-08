@@ -32,5 +32,12 @@ int main(){
 	Regular cuadradoReg(puntos);
 	cout<<"area -> "<<cuadradoReg.getArea()<<endl;
 
+	vector<Punto> puntosTriangulo;
+	puntos.push_back(pointA);
+	puntos.push_back(pointB);
+	puntos.push_back(pointC);
+	
+	Triangulo trianguloeq(puntosTriangulo);
+	cout<<trianguloeq.getArea()<<endl;
 	return 0;
 }

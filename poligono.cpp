@@ -43,3 +43,9 @@ double Regular::getArea(){
 	area = (getPerimetro()*apotema)/2;
 	return area;
 }
+
+double Triangulo::getArea(){
+	double area;
+	area = sqrt(getPerimetro()*(getPerimetro()-aristas[0].getDistancia())*(getPerimetro()-aristas[1].getDistancia())*(getPerimetro()-aristas[2].getDistancia()));
+	return area;
+}
