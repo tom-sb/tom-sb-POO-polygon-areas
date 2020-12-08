@@ -5,12 +5,19 @@
 using namespace std;
 
 int main(){
-	Punto point(2,2);
-	cout<<point.getX()<<endl;
-	cout<<point.getY()<<endl;
-	point.setY(4);
-	point.setX(4);
-	cout<<point.getX()<<endl;
-	cout<<point.getY()<<endl;
+	Punto pointA(4,2);
+	cout<<pointA.getX()<<endl;
+	cout<<pointA.getY()<<endl;
+	Punto pointB(4,8);
+	cout<<pointB.getX()<<endl;
+	cout<<pointB.getY()<<endl;
+	cout<<"dskjnfsdkj\n";
+	Linea myline(&pointA, &pointB);
+	cout<<myline.getPuntoA().getX()<<endl;
+	cout<<myline.getPuntoA().getY()<<endl;
+	cout<<myline.getPuntoB().getX()<<endl;
+	cout<<myline.getPuntoB().getY()<<endl;
+	cout<<myline.getDistancia()<<endl;
+
 	return 0;
 }

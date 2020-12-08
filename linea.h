@@ -11,5 +11,6 @@ public:
 	Punto getPuntoA();
 	Punto getPuntoB();
 	double getDistancia();
+	double dist2Points();
 };
 #endif
