@@ -1,5 +1,6 @@
 #include <iostream>
 #include "punto.h"
+#include "linea.h"
 
 using namespace std;
 
