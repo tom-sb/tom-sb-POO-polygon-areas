@@ -46,6 +46,15 @@ double Regular::getArea(){
 
 double Triangulo::getArea(){
 	double area;
-	area = sqrt(getPerimetro()*(getPerimetro()-aristas[0].getDistancia())*(getPerimetro()-aristas[1].getDistancia())*(getPerimetro()-aristas[2].getDistancia()));
+	double semiP = (aristas[0].getDistancia() + aristas[1].getDistancia() + aristas[2].getDistancia())/2;
+	area = sqrt(semiP 	* (semiP - aristas[0].getDistancia())
+ 						* (semiP - aristas[1].getDistancia()) 
+						* (semiP - aristas[2].getDistancia()));
+	return area;
+}
+
+double Rectangulo::getArea(){
+	double area;
+	area = aristas[0].getDistancia() * aristas[1].getDistancia();
 	return area;
 }

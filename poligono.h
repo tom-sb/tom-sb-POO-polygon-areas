@@ -31,4 +31,9 @@ public:
 	Triangulo(vector<Punto> puntos): Poligono(puntos){}
 	double getArea();
 };
+class Rectangulo: public Poligono{
+public:
+	Rectangulo(vector<Punto> puntos): Poligono(puntos){}
+	double getArea();
+};
 #endif
