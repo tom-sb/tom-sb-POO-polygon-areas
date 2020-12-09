@@ -13,7 +13,7 @@ Poligono::Poligono(vector<Punto> puntos){
 		}
 	}
 	for(auto it: aristas){
-		cout<<it.getDistancia()<<endl;
+		cout<<"Longitud de lado : "<<it.getDistancia()<<endl;
 	}
 }
 

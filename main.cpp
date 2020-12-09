@@ -8,39 +8,31 @@
 using namespace std;
 
 int main(){
-	Punto pointA(0,0);
-	Punto pointB(0,8);
-	Punto pointC(8,8);
-	Punto pointD(8,0);
-	
-	vector<Punto> puntos;
-	puntos.push_back(pointA);
-	puntos.push_back(pointB);
-	puntos.push_back(pointC);
-	puntos.push_back(pointD);
 
+	Punto pointA(2,0);
+	Punto pointB(4,0);
+	Punto pointC(5.247,1.5636);
+	Punto pointD(4.802,3.5135);
+	Punto pointE(3,4.3813);
+	Punto pointF(1.1981,3.5135);
+	Punto pointG(0.753,1.5637);
+
+	vector<Punto> hepta;
+	hepta.push_back(pointA);
+	hepta.push_back(pointB);
+	hepta.push_back(pointC);
+	hepta.push_back(pointD);
+	hepta.push_back(pointE);
+	hepta.push_back(pointF);
+	hepta.push_back(pointG);
+
+	Regular heptagono(hepta);
+	cout<<"Perimetro heptagono : "<<heptagono.getPerimetro()<<endl;
+	cout<<"Area heptagono : "<<heptagono.getArea()<<endl;
+/*
 	for(auto it: puntos){
 		cout<<it.getX()<<it.getY()<<endl;
 	}
-
-	Poligono cuadrado(puntos);		
-	cout<<"cuadrado.getN()"<<endl;
-	cout<<"numero de vertices: "<<cuadrado.getN()<<endl;
-	cout<<"perimetro: "<<cuadrado.getPerimetro()<<endl;
-	cout<<"dfdsfsdfdsfdsfdsf"<<endl;
-
-	Regular cuadradoReg(puntos);
-	cout<<"area -> "<<cuadradoReg.getArea()<<endl;
-
-	vector<Punto> puntosTriangulo;
-	puntosTriangulo.push_back(pointA);
-	puntosTriangulo.push_back(pointB);
-	puntosTriangulo.push_back(pointC);
-	
-	Triangulo trianguloeq(puntosTriangulo);
-	cout<<"area triangulo  "<<trianguloeq.getArea()<<endl;
-
-	Rectangulo rectangulo(puntos);
-	cout<<"area rectangulo "<<rectangulo.getArea()<<endl;
+*/
 	return 0;
 }

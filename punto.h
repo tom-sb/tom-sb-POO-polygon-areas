@@ -3,12 +3,12 @@
 
 class Punto{
 private:
-	int x, y;
+	double x, y;
 public:
-	Punto(int _x, int _y);
-	virtual int getX();
-	virtual int getY();
-	virtual void setX(int _x);
-	virtual void setY(int _y);
+	Punto(double _x, double _y);
+	virtual double getX();
+	virtual double getY();
+	virtual void setX(double _x);
+	virtual void setY(double _y);
 };
 #endif

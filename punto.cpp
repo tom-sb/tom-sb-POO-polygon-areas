@@ -1,22 +1,22 @@
 #include <iostream>
 #include "punto.h"
 
-Punto::Punto(int _x, int _y){
+Punto::Punto(double _x, double _y){
 	this->x = _x;
 	this->y = _y;
 }
-int Punto::getX(){
+double Punto::getX(){
 	return x;
 }
 
-int Punto::getY(){
+double Punto::getY(){
 	return y;
 }
 
-void Punto::setX(int _x){
+void Punto::setX(double _x){
 	this->x = _x;
 }
 
-void Punto::setY(int _y){
+void Punto::setY(double _y){
 	this->y = _y;
 }
